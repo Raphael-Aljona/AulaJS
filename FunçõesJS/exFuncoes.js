@@ -117,16 +117,16 @@
 
 //DESAFIO 2
 
-// const carrinho = [
-//   { produto: "Notebook", preco: 2500 },
-//   { produto: "Mouse", preco: 100 },
-//   { produto: "Teclado", preco: 200 }
-// ]
+const carrinho = [
+  { produto: "Notebook", preco: 2500 },
+  { produto: "Mouse", preco: 100 },
+  { produto: "Teclado", preco: 200 }
+]
 
-// const produtos = carrinho.map(produto => "Produto: " + produto.produto + "- R$ " + produto.preco)
-// const valorTotal = carrinho.reduce((acumulador, produto) => acumulador + produto.preco, 0)
-// const mouse = carrinho.find(produto => produto.produto.match("Mouse"))
+const produtos = carrinho.map(produto => "Produto: " + produto.produto + " - R$ " + produto.preco)
+const valorTotal = carrinho.reduce((acumulador, produto) => acumulador + produto.preco, 0)
+const mouse = carrinho.find(produto => produto.produto.match("Mouse"))
 
-// console.log(produtos)
-// console.log("Valor total da compra: " + valorTotal)
-// console.log(mouse)
+console.log(produtos)
+console.log("Valor total da compra: " + valorTotal)
+console.log(mouse)
