@@ -74,3 +74,48 @@
 //     n = Math.floor(n / 10);
 // }
 // alert(soma)
+
+// EXERCICIO 2
+
+// let n = parseInt(prompt("Digite um número inteiro"))
+// let fatorial = n - 1;
+
+// while (fatorial > 0){
+//     fatorial--;
+//     n += fatorial * n
+// }
+
+// console.log(n);
+
+// EXERCICIO 3
+
+// let numero = parseInt(prompt("Digite um número para ser invertido"))
+// let inverterNumero = 0;
+
+// while (numero > 0){
+//     let digito = numero % 10
+//     inverterNumero = inverterNumero * 10 + digito
+//     numero = Math.floor(numero / 10)
+// }
+
+// console.log(inverterNumero)
+
+// EXERCICIO 4
+
+// let n = parseInt(prompt("Digite um número inteiro"))
+// let divisor = n;
+// let resultado = 0;
+
+// for (i = 0; i < n; i++) {
+//     divisor--;
+//     console.log("Divisor:" + divisor)
+//     if (n % divisor == 0) {
+//         resultado += divisor;
+//         console.log("Resultado: "+ resultado)
+//     }
+//     if (divisor == 0 && resultado == n) {
+//             console.log("Número perfeito")
+//     } else if (divisor == 0 && resultado != n){
+//         console.log("Número imperfeito")
+//     };
+// }
