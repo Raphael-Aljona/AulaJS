@@ -95,27 +95,32 @@
 // while (numero > 0){
 //     let digito = numero % 10
 //     inverterNumero = inverterNumero * 10 + digito
-//     numero = Math.floor(numero / 10)
+//     numero = (numero - digito) / 10;
 // }
 
 // console.log(inverterNumero)
 
 // EXERCICIO 4
+let listaNum = []
+let index = 0;
 
-// let n = parseInt(prompt("Digite um número inteiro"))
-// let divisor = n;
-// let resultado = 0;
+for (let numero = 1; numero <= 1000; numero++) {
+    let soma = 0;
 
-// for (i = 0; i < n; i++) {
-//     divisor--;
-//     console.log("Divisor:" + divisor)
-//     if (n % divisor == 0) {
-//         resultado += divisor;
-//         console.log("Resultado: "+ resultado)
-//     }
-//     if (divisor == 0 && resultado == n) {
-//             console.log("Número perfeito")
-//     } else if (divisor == 0 && resultado != n){
-//         console.log("Número imperfeito")
-//     };
-// }
+    for (let i = 1; i < numero; i++) {
+        if (numero % i === 0) {
+            soma += i;
+        }
+    }
+
+    if (soma === numero) {
+        console.log(numero + " é um número perfeito");
+        // listaNum.push(numero)
+        listaNum[index] = numero;
+        index++;
+    }
+}
+
+console.log(listaNum)
+
+
