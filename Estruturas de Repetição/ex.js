@@ -102,7 +102,6 @@
 
 // EXERCICIO 4
 let listaNum = []
-let index = 0;
 
 for (let numero = 1; numero <= 1000; numero++) {
     let soma = 0;
@@ -116,8 +115,7 @@ for (let numero = 1; numero <= 1000; numero++) {
     if (soma === numero) {
         console.log(numero + " é um número perfeito");
         // listaNum.push(numero)
-        listaNum[index] = numero;
-        index++;
+        listaNum[listaNum.length] = numero;
     }
 }
 
